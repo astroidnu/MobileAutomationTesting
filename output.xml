@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170824 06:03:59.674" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/ibnumuzzakkir/Documents/Project/RobotFrameWork Appium /MovieAppTest/MovieAppTest.robot" id="s1" name="MovieAppTest">
+<test id="s1-t1" name="sort_movie_test">
+<kw name="Filter Function">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP}</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+</arguments>
+<status status="PASS" endtime="20170824 06:04:16.172" starttime="20170824 06:03:59.887"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]</arg>
+</arguments>
+<msg timestamp="20170824 06:04:16.172" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]'.</msg>
+<status status="PASS" endtime="20170824 06:04:17.911" starttime="20170824 06:04:16.172"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170824 06:04:22.913" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170824 06:04:22.913" starttime="20170824 06:04:17.912"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,${POSITION})]</arg>
+</arguments>
+<msg timestamp="20170824 06:04:22.914" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,1)]'.</msg>
+<status status="PASS" endtime="20170824 06:04:23.096" starttime="20170824 06:04:22.914"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170824 06:04:28.097" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170824 06:04:28.098" starttime="20170824 06:04:23.096"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170824 06:04:29.450" starttime="20170824 06:04:28.098"></status>
+</kw>
+<status status="PASS" endtime="20170824 06:04:29.450" starttime="20170824 06:03:59.886"></status>
+</kw>
+<status status="PASS" endtime="20170824 06:04:29.450" critical="yes" starttime="20170824 06:03:59.885"></status>
+</test>
+<status status="PASS" endtime="20170824 06:04:29.455" starttime="20170824 06:03:59.678"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="MovieAppTest" pass="1">MovieAppTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
