@@ -16,7 +16,10 @@ android:
 install: 
   - "sudo pip install 'requests[security]'"
   - "sudo pip install robotframework-appiumlibrary"  
-  - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  - git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
+  - export PATH="$HOME/.linuxbrew/bin:$PATH"
+  - export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+  - export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
   - "brew update"
   - "brew doctor"
   - export PATH="/usr/local/bin:$PATH"
