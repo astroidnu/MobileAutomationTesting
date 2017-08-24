@@ -14,9 +14,8 @@ android:
     - android-24
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
-node_js: "0.10"
 before_install:
-  - npm install
+  - sudo apt-get install npm
 # install dependencies
 install: 
   - "sudo pip install 'requests[security]'"
