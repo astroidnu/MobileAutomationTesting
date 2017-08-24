@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 language: android
 notifications: 
     email:
@@ -14,8 +14,8 @@ android:
     - extra-android-m2repository
 # install dependencies
 install: 
-  - "pip install 'requests[security]'"
-  - "pip install robotframework-appiumlibrary"  
+  - "sudo pip install 'requests[security]'"
+  - "sudo pip install robotframework-appiumlibrary"  
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   - "npm install -g appium"
 before_script: 
