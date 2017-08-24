@@ -4,8 +4,8 @@ Library           AppiumLibrary
 *** Variables ***
 ${REMOTE_URL}     http://localhost:4723/wd/hub
 ${PLATFORM_NAME}    Android
-${PLATFORM_VERSION}    7.0
-${DEVICE_NAME}    192.168.56.101:5555
+${PLATFORM_VERSION}    5.1.1
+${DEVICE_NAME}    emulator-5554
 ${APP}             ${CURDIR}/apk/moviesapp.apk
 ${DELAY_TIME}   2s
 ${PACKAGE_NAME}     com.example.android.popularmoviesstage1
