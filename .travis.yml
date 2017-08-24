@@ -1,8 +1,8 @@
-sudo: false
+sudo: true
 language: android
 notifications: 
     email:
-        - ibnumuzzaakkir@gmail.com #Add your email address
+        - ibnu.muzzakkir@amarbank.com #Add your email address
 android:
   components:
     - platform-tools
