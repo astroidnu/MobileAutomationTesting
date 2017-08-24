@@ -1,8 +1,8 @@
-sudo: true
+sudo: false
 language: android
 notifications: 
     email:
-        - ibnu.muzzakkir@amarbank.com #Add your email address
+        - ibnu.muzzakkir@amarbank.com 
 android:
   components:
     - platform-tools
@@ -13,9 +13,8 @@ android:
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
 # install dependencies
-before_install:
- - sudo apt-get install python2.7
 install: 
+  - "pip install pyOpenSSL ndg-httpsclient pyasn1"
   - "pip install -r requirements.txt"  
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   - "npm install -g appium"
