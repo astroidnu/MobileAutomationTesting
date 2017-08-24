@@ -15,12 +15,17 @@ android:
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
 before_install:
-  - sudo apt-get install npm
+  - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  - test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$PATH"
+  - test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+  - test -r ~/.bash_profile && echo 'export PATH="$(brew --prefix)/bin:$PATH"' >>~/.bash_profile
+  - echo 'export PATH="$(brew --prefix)/bin:$PATH"' >>~/.profile
+  - brew install hello
 # install dependencies
 install: 
   - "sudo pip install 'requests[security]'"
   - "sudo pip install robotframework-appiumlibrary" 
-  - "sudo npm install -g appium --unsafe-perm=true --allow-root"
+  # - "sudo npm install -g appium --unsafe-perm=true --allow-root"
 before_script: 
 # Create and start emulator
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
