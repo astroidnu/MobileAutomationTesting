@@ -15,7 +15,7 @@ android:
 # install dependencies
 install: 
   - "pip install 'requests[security]'"
-  - "pip install -r requirements.txt"  
+  - "pip install robotframework-appiumlibrary"  
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   - "npm install -g appium"
 before_script: 
