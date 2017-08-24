@@ -3,6 +3,8 @@ language: android
 notifications: 
     email:
         - ibnu.muzzakkir@amarbank.com 
+env:
+   - NODE_VERSION="0.12"
 android:
   components:
     - platform-tools
@@ -12,14 +14,16 @@ android:
     - android-24
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
+before_install:
+  - wget https://raw.githubusercontent.com/creationix/nvm/v0.31.0/nvm.sh -O ~/.nvm/nvm.sh
+  - source ~/.nvm/nvm.sh
+  - nvm install 5 # for Node v5
+  - node --version
 # install dependencies
 install: 
   - "sudo pip install 'requests[security]'"
   - "sudo pip install robotframework-appiumlibrary" 
-  - "sudo apt-get update"
-  - "sudo apt-get install nodejs" 
-  - "sudo apt-get install npm"
-  - "npm install appium"
+  - "npm install appium -g"
 before_script: 
 # Create and start emulator
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
