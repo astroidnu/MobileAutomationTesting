@@ -1,5 +1,7 @@
 sudo: true
 language: android
+jdk:
+    - oraclejdk8
 notifications: 
     email:
         - ibnu.muzzakkir@amarbank.com 
