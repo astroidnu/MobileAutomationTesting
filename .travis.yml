@@ -23,11 +23,12 @@ before_install:
   - PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
   - brew install gcc
   - brew install hello
+  - brew install node
 # install dependencies
 install: 
   - "sudo pip install 'requests[security]'"
   - "sudo pip install robotframework-appiumlibrary" 
-  # - "sudo npm install -g appium --unsafe-perm=true --allow-root"
+  - "npm install -g appium"
 before_script: 
 # Create and start emulator
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
