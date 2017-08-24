@@ -5,10 +5,9 @@ install:
   - "pip install -r requirements.txt"  
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   - "npm install -g appium"
-after_install:
-  - "appium"
 language: python
 python:
   - "2.7"
-# before_script: "appium"
+before_script:
+  - "appium &"
 script: "pybot MovieAppTest.robot"
