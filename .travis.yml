@@ -16,8 +16,10 @@ android:
 install: 
   - "sudo pip install 'requests[security]'"
   - "sudo pip install robotframework-appiumlibrary"  
-  - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - "brew update"
+  - "brew doctor"
+  - export PATH="/usr/local/bin:$PATH"
   - "brew install node"
   - "npm install -g appium"
 before_script: 
