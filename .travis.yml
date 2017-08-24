@@ -16,7 +16,9 @@ android:
     - extra-android-m2repository
 before_install:
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  - sudo apt-get install build-essential
   - echo 'export PATH="$(brew --prefix)/bin:$PATH"' >>~/.profile
+  - brew install gcc
   - brew install hello
 # install dependencies
 install: 
