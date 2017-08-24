@@ -19,8 +19,7 @@ install:
   - "sudo apt-get update"
   - "sudo apt-get install nodejs" 
   - "sudo apt-get install npm"
-  - sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-  - "npm install -g appium"
+  - "npm install appium"
 before_script: 
 # Create and start emulator
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
