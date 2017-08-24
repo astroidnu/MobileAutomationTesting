@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170824 07:01:01.163" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<robot generated="20170824 07:05:04.349" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/ibnumuzzakkir/Documents/Project/RobotFrameWork Appium /MovieAppTest/MovieAppTest.robot" id="s1" name="MovieAppTest">
 <test id="s1-t1" name="sort_movie_test">
 <kw name="Filter Function">
@@ -17,61 +17,50 @@
 <arg>automationName=appium</arg>
 <arg>appPackage=${PACKAGE_NAME}</arg>
 </arguments>
-<status status="PASS" endtime="20170824 07:01:08.836" starttime="20170824 07:01:01.362"></status>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170824 07:05:26.797" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20170824 07:05:26.798" starttime="20170824 07:05:26.792"></status>
 </kw>
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>xpath=//android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]</arg>
-</arguments>
-<msg timestamp="20170824 07:01:08.836" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]'.</msg>
-<status status="PASS" endtime="20170824 07:01:10.202" starttime="20170824 07:01:08.836"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20170824 07:01:15.204" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170824 07:01:15.204" starttime="20170824 07:01:10.202"></status>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>xpath=//android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,${POSITION})]</arg>
-</arguments>
-<msg timestamp="20170824 07:01:15.205" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,1)]'.</msg>
-<status status="PASS" endtime="20170824 07:01:15.390" starttime="20170824 07:01:15.204"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20170824 07:01:20.392" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170824 07:01:20.392" starttime="20170824 07:01:15.390"></status>
+<msg timestamp="20170824 07:05:26.798" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20170824 07:05:26.803" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device.
+</msg>
+<status status="FAIL" endtime="20170824 07:05:26.803" starttime="20170824 07:05:04.524"></status>
 </kw>
 <kw type="teardown" name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application.</doc>
-<status status="PASS" endtime="20170824 07:01:21.490" starttime="20170824 07:01:20.393"></status>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170824 07:05:26.806" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20170824 07:05:26.806" starttime="20170824 07:05:26.804"></status>
 </kw>
-<status status="PASS" endtime="20170824 07:01:21.490" starttime="20170824 07:01:01.362"></status>
+<msg timestamp="20170824 07:05:26.806" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20170824 07:05:26.806" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20170824 07:05:26.806" starttime="20170824 07:05:26.803">No application is open</status>
 </kw>
-<status status="PASS" endtime="20170824 07:01:21.490" critical="yes" starttime="20170824 07:01:01.361"></status>
+<status status="FAIL" endtime="20170824 07:05:26.807" starttime="20170824 07:05:04.524"></status>
+</kw>
+<status status="FAIL" endtime="20170824 07:05:26.807" critical="yes" starttime="20170824 07:05:04.523">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device.
+
+
+Also keyword teardown failed:
+No application is open</status>
 </test>
-<status status="PASS" endtime="20170824 07:01:21.494" starttime="20170824 07:01:01.165"></status>
+<status status="FAIL" endtime="20170824 07:05:26.808" starttime="20170824 07:05:04.351"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="MovieAppTest" pass="1">MovieAppTest</stat>
+<stat fail="1" id="s1" name="MovieAppTest" pass="0">MovieAppTest</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20170824 07:05:26.798" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20170824 07:05:26.806" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>
