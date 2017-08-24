@@ -17,6 +17,8 @@ install:
   - "sudo pip install 'requests[security]'"
   - "sudo pip install robotframework-appiumlibrary"  
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  - "brew update"
+  - "brew install node"
   - "npm install -g appium"
 before_script: 
 # Create and start emulator
