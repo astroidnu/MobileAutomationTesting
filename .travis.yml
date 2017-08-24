@@ -15,15 +15,10 @@ android:
 # install dependencies
 install: 
   - "sudo pip install 'requests[security]'"
-  - "sudo pip install robotframework-appiumlibrary"  
-  - git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
-  - export PATH="$HOME/.linuxbrew/bin:$PATH"
-  - export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
-  - export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
-  - "brew update"
-  - "brew doctor"
-  - export PATH="/usr/local/bin:$PATH"
-  - "brew install node"
+  - "sudo pip install robotframework-appiumlibrary" 
+  - "sudo apt-get update"
+  - "sudo apt-get install nodejs" 
+  - "sudo apt-get install npm"
   - "npm install -g appium"
 before_script: 
 # Create and start emulator
