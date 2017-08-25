@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170824 07:17:50.845" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<robot generated="20170825 09:41:28.624" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/ibnumuzzakkir/Documents/Project/RobotFrameWork Appium /MovieAppTest/MovieAppTest.robot" id="s1" name="MovieAppTest">
 <test id="s1-t1" name="sort_movie_test">
 <kw name="Filter Function">
@@ -17,49 +17,61 @@
 <arg>automationName=appium</arg>
 <arg>appPackage=${PACKAGE_NAME}</arg>
 </arguments>
-<msg timestamp="20170824 07:17:50.929" level="INFO">Could not get IP address for host: localhost</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170824 07:17:50.935" level="FAIL">No application is open</msg>
-<status status="FAIL" endtime="20170824 07:17:50.935" starttime="20170824 07:17:50.934"></status>
+<status status="PASS" endtime="20170825 09:41:33.419" starttime="20170825 09:41:28.846"></status>
 </kw>
-<msg timestamp="20170824 07:17:50.936" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20170824 07:17:50.937" level="FAIL">URLError: &lt;urlopen error [Errno 61] Connection refused&gt;</msg>
-<status status="FAIL" endtime="20170824 07:17:50.937" starttime="20170824 07:17:50.925"></status>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.FrameLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]</arg>
+</arguments>
+<msg timestamp="20170825 09:41:33.419" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]'.</msg>
+<status status="PASS" endtime="20170825 09:41:34.032" starttime="20170825 09:41:33.419"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170825 09:41:39.033" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170825 09:41:39.033" starttime="20170825 09:41:34.032"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,${POSITION})]</arg>
+</arguments>
+<msg timestamp="20170825 09:41:39.034" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,1)]'.</msg>
+<status status="PASS" endtime="20170825 09:41:39.532" starttime="20170825 09:41:39.034"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170825 09:41:44.535" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170825 09:41:44.535" starttime="20170825 09:41:39.533"></status>
 </kw>
 <kw type="teardown" name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application.</doc>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170824 07:17:50.939" level="FAIL">No application is open</msg>
-<status status="FAIL" endtime="20170824 07:17:50.939" starttime="20170824 07:17:50.938"></status>
+<status status="PASS" endtime="20170825 09:41:45.615" starttime="20170825 09:41:44.535"></status>
 </kw>
-<msg timestamp="20170824 07:17:50.939" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20170824 07:17:50.940" level="FAIL">No application is open</msg>
-<status status="FAIL" endtime="20170824 07:17:50.940" starttime="20170824 07:17:50.937">No application is open</status>
+<status status="PASS" endtime="20170825 09:41:45.615" starttime="20170825 09:41:28.845"></status>
 </kw>
-<status status="FAIL" endtime="20170824 07:17:50.941" starttime="20170824 07:17:50.925"></status>
-</kw>
-<status status="FAIL" endtime="20170824 07:17:50.941" critical="yes" starttime="20170824 07:17:50.924">URLError: &lt;urlopen error [Errno 61] Connection refused&gt;
-
-Also keyword teardown failed:
-No application is open</status>
+<status status="PASS" endtime="20170825 09:41:45.615" critical="yes" starttime="20170825 09:41:28.845"></status>
 </test>
-<status status="FAIL" endtime="20170824 07:17:50.942" starttime="20170824 07:17:50.848"></status>
+<status status="PASS" endtime="20170825 09:41:45.616" starttime="20170825 09:41:28.627"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="MovieAppTest" pass="0">MovieAppTest</stat>
+<stat fail="0" id="s1" name="MovieAppTest" pass="1">MovieAppTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20170824 07:17:50.936" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20170824 07:17:50.939" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>

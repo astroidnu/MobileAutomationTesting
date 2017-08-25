@@ -14,9 +14,9 @@ ${PACKAGE_NAME}     com.example.android.popularmoviesstage1
 Filter Function
      [Arguments]    ${POSITION} 
      Open Application  ${REMOTE_URL}  platformName=${PLATFORM_NAME}  platformVersion=${PLATFORM_VERSION}  deviceName=${DEVICE_NAME}  app=${APP}  automationName=appium  appPackage=${PACKAGE_NAME}
-     Click Element  xpath=//android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]
+     Click Element  xpath=//android.widget.FrameLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.ImageView[contains(@clickable,true)]
      Sleep  5s
-     Click Element  xpath=//android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,${POSITION})]
+     Click Element  xpath=//android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[contains(@index,${POSITION})]
      Sleep  5s  
      [TearDown]     Close Application
 
