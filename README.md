@@ -1,5 +1,3 @@
-#Main Idea
-
 This is simple project for proof of concept continous testing with travis and robotframework 
 
 # Technologies in used :
