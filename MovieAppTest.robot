@@ -22,6 +22,6 @@ Filter Function
 
 *** Test Cases ***
 sort_movie_test
-    Filter Function     1
+    Filter Function     0
 
 
