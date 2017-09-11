@@ -4,6 +4,7 @@ jdk:
     - oraclejdk8
 notifications: 
     email:
+        #change with your email
         - ibnu.muzzakkir@amarbank.com 
 android:
   components:
@@ -14,6 +15,7 @@ android:
     - android-24
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
+# install dependencies
 before_install:
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   - sudo apt-get install build-essential
@@ -24,7 +26,6 @@ before_install:
   - brew install gcc
   - brew install hello
   - brew install node
-# install dependencies
 install: 
   - "sudo pip install 'requests[security]'"
   - "sudo pip install robotframework-appiumlibrary" 
